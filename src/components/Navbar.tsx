@@ -86,7 +86,7 @@ export default function Navbar({ activeTab, setActiveTab }: NavbarProps) {
                   <motion.div
                     layoutId="activeTab"
                     className={cn(
-                      "absolute bottom-0 left-0 right-0 h-0.5",
+                      "absolute -bottom-1 left-0 right-0 h-0.5",
                       isScrolled ? "bg-blue-600" : "bg-white"
                     )}
                     initial={false}
