@@ -28,18 +28,6 @@ export default function Hero() {
     <div className="relative h-screen w-full overflow-hidden bg-slate-900 flex items-center justify-center">
       {/* Dynamic Background Slider */}
       <div className="absolute inset-0 z-0">
-        <AnimatePresence mode="popLayout">
-          <motion.img
-            key={currentImage}
-            src={BACKGROUND_IMAGES[currentImage]}
-            initial={{ opacity: 0, scale: 1.1 }}
-            animate={{ opacity: 0.5, scale: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 2, ease: "easeInOut" }}
-            className="absolute inset-0 w-full h-full object-cover"
-            referrerPolicy="no-referrer"
-          />
-        </AnimatePresence>
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-indigo-900/70 to-slate-900/90" />
         
         {/* Animated Orbs */}
