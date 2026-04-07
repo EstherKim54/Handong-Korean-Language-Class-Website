@@ -5,7 +5,7 @@ import { ChevronDown } from 'lucide-react';
 
 const BACKGROUND_IMAGES = [
   "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2000&auto=format&fit=crop", // University campus
-  "https://images.unsplash.com/photo-1523240795612-9a05s4b0db644?q=80&w=2000&auto=format&fit=crop", // Students
+  "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2000&auto=format&fit=crop", // Students
   "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=2000&auto=format&fit=crop", // People talking
 ];
 
@@ -26,49 +26,23 @@ export default function Hero() {
 
   return (
     <div className="relative h-screen w-full overflow-hidden bg-slate-900 flex items-center justify-center">
-      {/* Dynamic Background Slider */}
-      <div className="absolute inset-0 z-0">
-        <AnimatePresence mode="popLayout">
+      {/* Dynamic Background Slider - Optimized for Mobile */}
+      <div className="absolute inset-0 z-0 bg-slate-900">
+        <AnimatePresence mode="sync">
           <motion.img
             key={currentImage}
             src={BACKGROUND_IMAGES[currentImage]}
-            initial={{ opacity: 0, scale: 1.1 }}
-            animate={{ opacity: 0.5, scale: 1 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 0.4 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 2, ease: "easeInOut" }}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
             className="absolute inset-0 w-full h-full object-cover"
             referrerPolicy="no-referrer"
           />
         </AnimatePresence>
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-indigo-900/70 to-slate-900/90" />
         
-        {/* Animated Orbs */}
-        <motion.div 
-          animate={{ 
-            scale: [1, 1.3, 1],
-            opacity: [0.3, 0.6, 0.3],
-            x: [0, 150, 0],
-            y: [0, -100, 0],
-            rotate: [0, 90, 0]
-          }}
-          transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500 rounded-full mix-blend-screen filter blur-[100px]"
-        />
-        <motion.div 
-          animate={{ 
-            scale: [1, 1.8, 1],
-            opacity: [0.2, 0.5, 0.2],
-            x: [0, -150, 0],
-            y: [0, 150, 0],
-            rotate: [0, -90, 0]
-          }}
-          transition={{ duration: 20, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-          className="absolute bottom-1/4 right-1/4 w-[30rem] h-[30rem] bg-indigo-500 rounded-full mix-blend-screen filter blur-[120px]"
-        />
-        
-        {/* Grid Pattern Overlay */}
-        <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay" />
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]" />
+        {/* Simple Gradient Overlay for Text Readability (No heavy mix-blend modes) */}
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-blue-900/50 to-slate-900/90" />
       </div>
 
       {/* Content */}
