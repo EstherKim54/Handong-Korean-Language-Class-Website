@@ -5,7 +5,7 @@ import { ChevronDown } from 'lucide-react';
 
 const BACKGROUND_IMAGES = [
   "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2000&auto=format&fit=crop", // University campus
-  "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2000&auto=format&fit=crop", // Students
+  "https://images.unsplash.com/photo-1523240795612-9a05s4b0db644?q=80&w=2000&auto=format&fit=crop", // Students
   "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=2000&auto=format&fit=crop", // People talking
 ];
 
@@ -28,6 +28,18 @@ export default function Hero() {
     <div className="relative h-screen w-full overflow-hidden bg-slate-900 flex items-center justify-center">
       {/* Dynamic Background Slider */}
       <div className="absolute inset-0 z-0">
+        <AnimatePresence mode="popLayout">
+          <motion.img
+            key={currentImage}
+            src={BACKGROUND_IMAGES[currentImage]}
+            initial={{ opacity: 0, scale: 1.1 }}
+            animate={{ opacity: 0.5, scale: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 2, ease: "easeInOut" }}
+            className="absolute inset-0 w-full h-full object-cover"
+            referrerPolicy="no-referrer"
+          />
+        </AnimatePresence>
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-indigo-900/70 to-slate-900/90" />
         
         {/* Animated Orbs */}
