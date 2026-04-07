@@ -3,7 +3,7 @@ export type Language = 'ko' | 'en';
 export const translations = {
   ko: {
     nav: {
-      intro: '한국어학당 안내',
+      intro: '한국어교실 안내',
       course: '한국어 연수과정',
       curriculum: '교육과정',
       application: '입학 신청',
