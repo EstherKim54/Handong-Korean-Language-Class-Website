@@ -65,45 +65,27 @@ export default function IntroSection() {
           <h3 className="text-3xl font-bold text-gray-900 mb-3">{t.intro.instagramTitle}</h3>
           <p className="text-gray-600 font-medium mb-10 text-center">{t.intro.instagramSubtitle}</p>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-4xl">
-            {/* Mock Reel 1 */}
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="group relative aspect-[9/16] bg-slate-900 rounded-xl overflow-hidden shadow-md cursor-pointer block">
-              <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=600&auto=format&fit=crop" alt="Campus Life" className="object-cover w-full h-full opacity-80 group-hover:scale-110 transition-transform duration-700" />
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
-              <div className="absolute top-4 right-4 bg-black/50 p-2 rounded-full backdrop-blur-sm">
-                <Play className="w-4 h-4 text-white fill-white" />
-              </div>
-              <div className="absolute bottom-4 left-4 right-4">
-                <p className="text-white font-medium text-sm line-clamp-2">캠프 첫날! 즐거운 오리엔테이션 현장 🎉</p>
-              </div>
-            </a>
-            
-            {/* Mock Reel 2 */}
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="group relative aspect-[9/16] bg-slate-900 rounded-xl overflow-hidden shadow-md cursor-pointer block">
-              <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=600&auto=format&fit=crop" alt="Campus Life" className="object-cover w-full h-full opacity-80 group-hover:scale-110 transition-transform duration-700" />
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
-              <div className="absolute top-4 right-4 bg-black/50 p-2 rounded-full backdrop-blur-sm">
-                <Play className="w-4 h-4 text-white fill-white" />
-              </div>
-              <div className="absolute bottom-4 left-4 right-4">
-                <p className="text-white font-medium text-sm line-clamp-2">한동대학교의 아름다운 캠퍼스를 소개합니다 🏫</p>
-              </div>
-            </a>
-
-            {/* Mock Reel 3 */}
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="group relative aspect-[9/16] bg-slate-900 rounded-xl overflow-hidden shadow-md cursor-pointer hidden md:block">
-              <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=600&auto=format&fit=crop" alt="Campus Life" className="object-cover w-full h-full opacity-80 group-hover:scale-110 transition-transform duration-700" />
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
-              <div className="absolute top-4 right-4 bg-black/50 p-2 rounded-full backdrop-blur-sm">
-                <Play className="w-4 h-4 text-white fill-white" />
-              </div>
-              <div className="absolute bottom-4 left-4 right-4">
-                <p className="text-white font-medium text-sm line-clamp-2">한국어교실 학생들의 리얼 후기! 🗣️</p>
-              </div>
-            </a>
+          <div className="w-full flex justify-center">
+            {/* 
+              💡 관리자님, 인스타그램 릴스를 직접 띄우는 방법입니다!
+              아래 iframe의 src 주소에서 'C-ExampleCode' 부분을 
+              올리고자 하는 실제 릴스의 고유 문자열로 변경하시면 됩니다.
+              (릴스 주소가 https://www.instagram.com/reel/C8qK_lZpY3X/ 라면, 
+               src="https://www.instagram.com/reel/C8qK_lZpY3X/embed" 로 작성)
+            */}
+            <iframe 
+              src="https://www.instagram.com/p/DUU2kbfkmti/?igsh=MXFoMnMxY2RocGZtbQ==" 
+              width="100%" 
+              height="580" 
+              frameBorder="0" 
+              scrolling="no" 
+              allowTransparency={true} 
+              className="max-w-[400px] rounded-xl shadow-md border border-gray-100 bg-gray-50"
+            ></iframe>
           </div>
           
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="mt-10 px-8 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all flex items-center space-x-2">
+          {/* 인스타그램 공식 계정 주소로 아래 href="https://www.instagram.com/아이디" 부분을 수정해주세요 */}
+          <a href="https://www.instagram.com/hgukorean?igsh=bWFmbW1sMmtmZ3Nw" target="_blank" rel="noopener noreferrer" className="mt-10 px-8 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all flex items-center space-x-2">
             <Instagram className="w-5 h-5" />
             <span>Go to Instagram</span>
           </a>
