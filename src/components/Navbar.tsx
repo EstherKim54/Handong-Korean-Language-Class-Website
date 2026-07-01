@@ -27,6 +27,7 @@ export default function Navbar({ activeTab, setActiveTab }: NavbarProps) {
     { id: 'course', label: t.nav.course },
     { id: 'curriculum', label: t.nav.curriculum },
     { id: 'application', label: t.nav.application },
+    { id: 'community', label: t.nav.community },
   ];
 
   const toggleLanguage = () => {
