@@ -11,6 +11,7 @@ import IntroSection from './components/sections/IntroSection';
 import CourseSection from './components/sections/CourseSection';
 import CurriculumSection from './components/sections/CurriculumSection';
 import ApplicationSection from './components/sections/ApplicationSection';
+import CommunitySection from './components/sections/CommunitySection';
 import Footer from './components/Footer';
 import { AnimatePresence } from 'motion/react';
 
@@ -30,6 +31,7 @@ function AppContent() {
             {activeTab === 'course' && <CourseSection key="course" />}
             {activeTab === 'curriculum' && <CurriculumSection key="curriculum" />}
             {activeTab === 'application' && <ApplicationSection key="application" />}
+            {activeTab === 'community' && <CommunitySection key="community" />}
           </AnimatePresence>
         </div>
       </main>
