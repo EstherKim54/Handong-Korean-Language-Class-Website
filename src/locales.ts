@@ -7,6 +7,7 @@ export const translations = {
       course: '한국어 연수과정',
       curriculum: '교육과정',
       application: '입학 신청',
+      community: '게시판',
     },
     hero: {
       title1: '세계와 소통하는',
@@ -15,7 +16,7 @@ export const translations = {
       cta: '과정 알아보기',
     },
     intro: {
-      title: '한국어학당 소개',
+      title: '한국어교실 소개',
       subtitle: '세계와 소통하는 한국어 교육의 장, 한동대학교 한국어교실',
       p1: '한동대학교 한국어교실은 한국어를 배우고자 하는 외국인 학습자들에게 체계적이고 수준 높은 교육을 제공하여, 한국어 능력 향상은 물론 한국 사회와 문화를 깊이 이해할 수 있도록 돕고 있습니다.',
       p2: '국제화와 세계화가 빠르게 진행되는 오늘날, 언어 능력은 개인의 성장과 진로 개발에 중요한 기반이 되고 있습니다. 특히 한국어에 대한 세계적 관심이 높아짐에 따라, 외국인 학습자들에게 전문적인 한국어 교육과 다양한 문화 체험의 기회를 제공하는 일의 중요성도 더욱 커지고 있습니다.',
@@ -27,6 +28,8 @@ export const translations = {
         '학습자 중심의 교육과정과 맞춤형 학습 지원 강화',
         '국제 교류와 협력을 통한 한국어교육의 전문성 제고',
       ],
+      instagramTitle: '공식 인스타그램',
+      instagramSubtitle: '한국어교실의 생생한 릴스와 일상을 만나보세요!',
       locationTitle: '찾아오시는 길',
       address: '주소: 경북 포항시 북구 흥해읍 한동로 558 느헤미야홀 412호',
       phone: '전화번호 (내선번호): 054-260-3177',
@@ -105,6 +108,26 @@ export const translations = {
         '비자 신청이 필요한 경우 등록금 납부 확인 후 표준입학허가서를 발급해 드립니다.',
         '입학 절차를 마치려면 반드시 레벨테스트를 치러야 합니다. 단, 한국어에 대한 지식이 전혀 없는 학생은 자동으로 1급에 배치됩니다. 배치시험을 제 날짜에 치르지 않을 경우 자신의 수준에 맞지 않는 반에 배치될 수 있습니다.'
       ]
+    },
+    community: {
+      title: '커뮤니티',
+      subtitle: '한국어교실의 다양한 소식과 이야기를 만나보세요.',
+      tabNotice: '공지사항',
+      tabGallery: '캠프 사진 & 후기',
+      adminWriteButton: '관리자 글쓰기',
+      passwordPrompt: '관리자 비밀번호를 입력하세요:',
+      passwordPlaceholder: '비밀번호 입력',
+      passwordSubmit: '확인',
+      passwordCancel: '취소',
+      passwordIncorrect: '비밀번호가 틀렸습니다.',
+      newPostTitle: '새 글 쓰기',
+      postTitlePlaceholder: '제목을 입력하세요',
+      postContentPlaceholder: '내용을 입력하세요',
+      postSubmit: '등록',
+      postCancel: '취소',
+      noPosts: '등록된 글이 없습니다.',
+      date: '작성일',
+      author: '작성자'
     }
   },
   en: {
@@ -113,6 +136,7 @@ export const translations = {
       course: 'Language Course',
       curriculum: 'Curriculum',
       application: 'Application',
+      community: 'Community',
     },
     hero: {
       title1: 'Communicating with the World',
@@ -133,6 +157,8 @@ export const translations = {
         'Strengthen learner-centered curriculum and customized learning support',
         'Enhance the professionalism of Korean language education through international exchange and cooperation',
       ],
+      instagramTitle: 'Official Instagram',
+      instagramSubtitle: 'Check out the vivid reels and daily life of the Korean Language Classroom!',
       locationTitle: 'Location',
       address: 'Address: Room 412, Nehemiah Hall, 558 Handong-ro, Heunghae-eup, Buk-gu, Pohang-si, Gyeongbuk',
       phone: 'Phone (Extension): 054-260-3177',
@@ -211,6 +237,26 @@ export const translations = {
         'If a visa application is required, a standard admission letter will be issued after confirming the tuition payment.',
         'To complete the admission process, you must take a level test. However, students with no knowledge of Korean will automatically be placed in Level 1. If you do not take the placement test on the scheduled date, you may be placed in a class that does not match your level.'
       ]
+    },
+    community: {
+      title: 'Community',
+      subtitle: 'Check out various news and stories from the Korean Language Classroom.',
+      tabNotice: 'Notices',
+      tabGallery: 'Camp Photos & Reviews',
+      adminWriteButton: 'Admin Write',
+      passwordPrompt: 'Enter admin password:',
+      passwordPlaceholder: 'Password',
+      passwordSubmit: 'Confirm',
+      passwordCancel: 'Cancel',
+      passwordIncorrect: 'Incorrect password.',
+      newPostTitle: 'Write New Post',
+      postTitlePlaceholder: 'Enter title',
+      postContentPlaceholder: 'Enter content',
+      postSubmit: 'Submit',
+      postCancel: 'Cancel',
+      noPosts: 'No posts available.',
+      date: 'Date',
+      author: 'Author'
     }
   }
 };
