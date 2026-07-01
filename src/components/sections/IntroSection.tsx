@@ -74,18 +74,18 @@ export default function IntroSection() {
                src="https://www.instagram.com/reel/C8qK_lZpY3X/embed" 로 작성)
             */}
             <iframe 
-              src="https://www.instagram.com/p/DUU2kbfkmti/?igsh=MXFoMnMxY2RocGZtbQ==" 
+              src="https://www.instagram.com/reel/C-ExampleCode/embed" 
               width="100%" 
               height="580" 
               frameBorder="0" 
               scrolling="no" 
-              allowTransparency={true} 
+              allowtransparency="true" 
               className="max-w-[400px] rounded-xl shadow-md border border-gray-100 bg-gray-50"
             ></iframe>
           </div>
           
           {/* 인스타그램 공식 계정 주소로 아래 href="https://www.instagram.com/아이디" 부분을 수정해주세요 */}
-          <a href="https://www.instagram.com/hgukorean?igsh=bWFmbW1sMmtmZ3Nw" target="_blank" rel="noopener noreferrer" className="mt-10 px-8 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all flex items-center space-x-2">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="mt-10 px-8 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all flex items-center space-x-2">
             <Instagram className="w-5 h-5" />
             <span>Go to Instagram</span>
           </a>
